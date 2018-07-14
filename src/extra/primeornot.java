@@ -10,16 +10,28 @@ public class primeornot {
 
 		int numero = Integer.parseInt(number);
 
-		for (int i = 2; i < 5; i++) {
+		for (int i = 2; i < numero; i++) {
 
-			if (numero % 5 == 0) {
+			if (numero % i == 0) {
+							
+			JOptionPane.showMessageDialog(null, "It is not a prime number!");
 				
-				System.out.println("No");
-
-				JOptionPane.showMessageDialog(null, "Is your number prime?");
+				System.exit(0);
 			}
-
 		}
+				JOptionPane.showMessageDialog(null, "Your number is prime!");
+				
+				
+			}
+			
+		}
+		
+	
 
-	}
-}
+
+
+
+
+
+
+
